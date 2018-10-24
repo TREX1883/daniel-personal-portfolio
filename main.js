@@ -11,7 +11,6 @@ films.forEach((film) => {
     console.log(film.title)
 })
 
-// console.log(people[0])
 
 let peopleList = document.querySelector("#people-list")
 
