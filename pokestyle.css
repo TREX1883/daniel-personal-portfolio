@@ -1,0 +1,151 @@
+#container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px; 
+    box-shadow: 5px 5px 5px black;
+    border: 2px solid #666;
+}
+
+img{
+    justify-self: center;
+    width: 100%;
+    /* height: 100%; */
+}
+
+figcaption{
+    background-color: blue;
+    color: #fff;
+    font-size: 2rem;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+}
+
+.card {
+    width: 460px;
+    height: 500px;
+    transition: transform 1s; 
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    margin: 20px;
+  }
+  
+.card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+.card__face {
+    position: absolute;
+    backface-visibility: hidden;
+     }
+
+.card__face--front {
+    background: rgb(250, 53, 53);
+    }
+  
+  
+.card__face--back {
+    width: 325px;
+    height: 452px;
+    display: flex;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+    flex-wrap: wrap;
+    align-content: space-around;
+    background: rgb(47, 47, 247);
+}
+
+p{
+    font-size: 1.5rem;
+    color: black;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.newButton{
+    display: flex;
+    justify-content: center;
+}
+
+#create{
+    width: 350px;
+    height: 80px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+/* ------------------------------------------------ */
+
+/* 
+#container {
+    display: flex;
+    flex-wrap: wrap
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    margin: 8;
+    padding: 5px;
+    box-shadow: 5px 5px 5px #666;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+  }
+  
+  .card__face--front {
+    background: red;
+  }
+  
+  .card__face--back {
+    background: green;
+    transform: rotateY(180deg);
+  }
+ */
