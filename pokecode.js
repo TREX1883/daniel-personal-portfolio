@@ -59,8 +59,8 @@ pokeContainer.appendChild(card)
 pokemon.forEach(element => cardCreator(element))
 
 let newCard = {
-   "ename": "Danosarus", 
-    "id": "026", 
+   "ename": "Exeggcute", 
+    "id": "102", 
     "base": {
     "Attack": 190, 
     "Defense": 35, 
@@ -74,11 +74,11 @@ create.addEventListener('click', () => {
 return cardCreator(newCard)
 })
 
-let createCard = document.createElement('div')
-createCard.className = "card"
-createCard.addEventListener('click', () => {
-  console.log("thanks for clicking!")
-})
+// let createCard = document.createElement('div')
+// createCard.className = "card"
+// createCard.addEventListener('click', () => {
+//   console.log("thanks for clicking!")
+// })
 
 
 // ---------------------------------------------------

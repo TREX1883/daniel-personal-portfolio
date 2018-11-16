@@ -1,3 +1,11 @@
+body {
+    background-color: rgb(137, 250, 250);
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+}
 #container{
     display:flex;
     flex-wrap: wrap;
@@ -8,15 +16,13 @@ figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 30px; 
-    box-shadow: 5px 5px 5px black;
-    border: 2px solid #666;
+    padding: 35px; 
+    box-shadow: 5px 5px 5px rgb(44, 44, 44);
 }
 
 img{
     justify-self: center;
     width: 100%;
-    /* height: 100%; */
 }
 
 figcaption{
@@ -26,12 +32,14 @@ figcaption{
     padding: 6px;
     text-align: center;
     width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 
 .card {
-    width: 460px;
+    width: 480px;
     height: 500px;
-    transition: transform 1s; 
+    transition: transform 2s; 
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
@@ -45,12 +53,13 @@ figcaption{
 .card__face {
     position: absolute;
     backface-visibility: hidden;
+    border-radius: 15px;
+    border: 5px solid black;
      }
 
 .card__face--front {
     background: rgb(250, 53, 53);
     }
-  
   
 .card__face--back {
     width: 325px;
