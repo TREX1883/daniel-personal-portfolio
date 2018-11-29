@@ -58,21 +58,48 @@ pokeContainer.appendChild(card)
 // Create new Card
 pokemon.forEach(element => cardCreator(element))
 
-let newCard = {
-   "ename": "Exeggcute", 
-    "id": "102", 
-    "base": {
-    "Attack": 190, 
-    "Defense": 35, 
-    "HP": 30,  
-    "Speed": 200
+function Pokemon(ename, id, base) {
+     this.ename = ename
+     this.id = id
+     this.base = base
 }
-}
+
+let newPokemon = new Pokemon("Exeggcute", 102, {"Attack": 190, "Defense": 35, "HP": 30, "Speed": 200})
+
+// let newCard = {
+//    "ename": "Exeggcute", 
+//     "id": "102", 
+//     "base": {
+//     "Attack": 190, 
+//     "Defense": 35, 
+//     "HP": 30,  
+//     "Speed": 200
+// }
+// }
 
 let create = document.querySelector('#create')
 create.addEventListener('click', () => {
 return cardCreator(newCard)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let createCard = document.createElement('div')
 // createCard.className = "card"
