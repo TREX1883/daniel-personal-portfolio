@@ -66,6 +66,7 @@ function Pokemon(ename, id, base) {
 
 let newPokemon = new Pokemon("Exeggcute", 102, {"Attack": 190, "Defense": 35, "HP": 30, "Speed": 200})
 
+
 // let newCard = {
 //    "ename": "Exeggcute", 
 //     "id": "102", 
@@ -77,13 +78,25 @@ let newPokemon = new Pokemon("Exeggcute", 102, {"Attack": 190, "Defense": 35, "H
 // }
 // }
 
+// class Pokemon {
+//      constructor(id, ename, base) {
+//           this.id = id
+//           this.ename = ename
+//           this.base = base
+//      }
+// }
+
+// let newPokemon = new Pokemon(150, 'Newtwo', {'Attack': 190, 'Defense': 35, 'HP': 30})
+
+
 let create = document.querySelector('#create')
 create.addEventListener('click', () => {
-return cardCreator(newCard)
+return cardCreator(newPokemon)
 })
 
 
-
+// let att = Math.floor(Math.random() * Math.floor(max));
+// attack = Math.random();
 
 
 
