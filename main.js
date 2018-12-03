@@ -23,3 +23,17 @@ limitedPeople.forEach((people) => {
     peopleList.appendChild(listPeople)
     console.log(people.name)
 })
+
+
+
+let starshipsList = document.querySelector("#starships-list")
+
+// This enables to limit how many lists with 10 max 
+let limitedStarships = starships.slice(0, 10)
+
+limitedStarships.forEach((starships) => {
+    let listStarships = document.createElement('li')
+    listStarships.textContent = starships.name
+    starshipsList.appendChild(listStarships)
+    console.log(starships.name)
+})

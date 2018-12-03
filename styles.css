@@ -16,6 +16,7 @@ nav ul {
   nav ul li {
     margin: 20px;
   }
+
   .project {
     margin: 40px 0;
   }
@@ -34,6 +35,7 @@ nav ul li a {
   text-decoration: none;
   margin: 35px;
   padding: 15px;
+  font-size: 28px;
 }
 
 nav ul li a:hover {
@@ -44,12 +46,13 @@ nav ul li a:hover {
 
 h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 #welcome-section {
   background: #28A5FB;
+  /* min-height: 65vh; */
   min-height: 55vh;
   padding-top: 45vh;
   color: black;
@@ -62,16 +65,22 @@ h1 {
   
 }
 
+#profile-image {
+  justify-content: center;
+  display: flex;
+  height: 150px;
+  border-radius: 15px;
+  margin: 25px;
+}
+
 .work {
   padding-top: 45px;
   margin-top: -45px;
-  color: #008080;
+  /* color: #008080; */
+  color: black;
   font-weight: normal;
 }
 
-/* #box-container-2 {
-  flex-wrap: nowrap;
-} */
 
 .project {
   text-decoration: none;
@@ -108,18 +117,13 @@ h1 {
   /* list-style-type: none; */
 }
 
-#box-1 {
+#box {
   border: 5px solid black;
   border-radius: 20px;
   list-style-type: none;
   background-color: bisque;
-}
-
-#box-2 {
-  border: 5px solid black;
-  border-radius: 20px;
-  list-style-type: none;
-  background-color: bisque;
+  padding: 10px;
+  margin: 25px;
 }
 
 .bullets {
