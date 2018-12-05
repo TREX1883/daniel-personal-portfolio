@@ -52,7 +52,6 @@ h1 {
 
 #welcome-section {
   background: #28A5FB;
-  /* min-height: 65vh; */
   min-height: 55vh;
   padding-top: 45vh;
   color: black;
@@ -70,17 +69,17 @@ h1 {
   display: flex;
   height: 150px;
   border-radius: 15px;
-  margin: 25px;
+  margin: 25px 0px 0px 150px;
 }
+
+/* --------------------------------------Add on project-------------------------- */
 
 .work {
   padding-top: 45px;
   margin-top: -45px;
-  /* color: #008080; */
   color: black;
   font-weight: normal;
 }
-
 
 .project {
   text-decoration: none;
@@ -91,15 +90,13 @@ h1 {
   border: 2px solid black;
   height: 250px;
   width: 280px;
-  margin: 40px 40px;
+  margin: 100px 50px 70px 50px;
   border-radius: 15px;
 }
 
 .project-pic {
   width: 280px;
   height: 200px;
-  /* border-bottom: 1px solid black; */
-  /* border-radius: 15px; */
 }
 
 .project-title {
@@ -113,8 +110,6 @@ h1 {
 #box-container {
   justify-content: space-evenly;
   display: flex;
-  /* border: 2px solid green; */
-  /* list-style-type: none; */
 }
 
 #box {
@@ -123,55 +118,37 @@ h1 {
   list-style-type: none;
   background-color: bisque;
   padding: 10px;
-  margin: 25px;
+  margin: 70px 0px 100px 0px;
 }
 
 .bullets {
   list-style-type: none;
   margin: 15px 15px;
 }
-
-
-
+/* ----------------------------CONTACT ME--------------------------- */
 #contact {
   background: #28A5FB;
-  padding-bottom: 75px
 }
 
-.contact-details {
-  display: inline-block;
-  font-weight: bold;
-  margin: 0px 20px 45px 100px;
-  /* margin: 0 35px 45px 35px; */
+ .contact-details {
+  margin: -40px 0px 70px 0px;
   list-style-type: none;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 100%;
   width: 100px;
   height: 100px;
-  line-height: 100px;
   background: #3340F5;
-  color: white;
   text-decoration: none;
 }
 
-.contact-details:hover {
-  background-color: white;
-  color: #3340F5; 
-  transition: background-color .8s; 
+ .contact-details:hover {
+  border: 3px solid white; 
+  transition: background-color 1s; 
 }
-/* 367px */
-@media only screen and (max-width: 500px) {
-  /*    #contact{
-    min-height:1100px;
-  } */
-  .contact-details {
-    border: 2px solid #90C695;
-    border-radius: 0;
-    width: 90px;
-    height: 20px;
-    padding: 10px;
-    line-height: normal;
-  }
+
+#contact2{
+  justify-content: space-evenly;
+  display: flex;
 }
 
 footer {

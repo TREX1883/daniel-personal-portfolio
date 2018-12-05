@@ -1,4 +1,4 @@
-import { pokemon } from './pokemon.js'
+import { pokemon } from './assets/pokemon.js'
 // console.log('TEST')
 
 console.log(pokemon)
@@ -32,7 +32,7 @@ let backCard = document.createElement('figure')
 backCard.className = "card__face card__face--back"
 let capt = document.createElement('figcaption')
 let imag = document.createElement('img')
-imag.src = "pokemonLogo2.png"
+imag.src = "img2/pokemonLogo2.png"
 capt.textContent = poke.ename
 let attack = document.createElement('p')
 let defense = document.createElement('p')
@@ -66,6 +66,10 @@ function Pokemon(ename, id, base) {
 
 let newPokemon = new Pokemon("Exeggcute", 102, {"Attack": 190, "Defense": 35, "HP": 30, "Speed": 200})
 
+let create = document.querySelector('#create')
+create.addEventListener('click', () => {
+return cardCreator(newPokemon)
+})
 
 // let newCard = {
 //    "ename": "Exeggcute", 
@@ -89,10 +93,7 @@ let newPokemon = new Pokemon("Exeggcute", 102, {"Attack": 190, "Defense": 35, "H
 // let newPokemon = new Pokemon(150, 'Newtwo', {'Attack': 190, 'Defense': 35, 'HP': 30})
 
 
-let create = document.querySelector('#create')
-create.addEventListener('click', () => {
-return cardCreator(newPokemon)
-})
+
 
 
 // let att = Math.floor(Math.random() * Math.floor(max));

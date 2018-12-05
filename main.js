@@ -1,6 +1,9 @@
 import { films } from './assets/films.js'
 import { people } from './assets/people.js'
 import { starships } from './assets/starships.js'
+import { senatorData } from './assets/senators.js'
+
+console.log(senatorData.results[0].members)
 
 let filmList = document.querySelector("#film-list")
 
@@ -37,3 +40,8 @@ limitedStarships.forEach((starships) => {
     starshipsList.appendChild(listStarships)
     console.log(starships.name)
 })
+
+
+// ------------------------SENATORS PAGE---------------------------------
+
+
