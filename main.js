@@ -1,16 +1,18 @@
 import { films } from './assets/films.js'
 import { people } from './assets/people.js'
 import { starships } from './assets/starships.js'
-import { senatorData } from './assets/senators.js'
 
-console.log(senatorData.results[0].members)
 
+
+// let filmsList2 = films;
+// console.log(filmsList2)
 let filmList = document.querySelector("#film-list")
 
 films.forEach((film) => {
     let listItem = document.createElement('li')
     listItem.textContent = film.title
     filmList.appendChild(listItem)
+    console.log(listItem)
     console.log(film.title)
 })
 
@@ -40,8 +42,5 @@ limitedStarships.forEach((starships) => {
     starshipsList.appendChild(listStarships)
     console.log(starships.name)
 })
-
-
-// ------------------------SENATORS PAGE---------------------------------
 
 

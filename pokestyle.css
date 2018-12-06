@@ -39,7 +39,7 @@ figcaption{
 .card {
     width: 480px;
     height: 500px;
-    transition: transform 2s; 
+    transition: transform 1s; 
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
@@ -47,7 +47,7 @@ figcaption{
   }
   
 .card.is-flipped {
-    transform: rotateY(180deg);
+    transform: rotateY(180.1deg);
   }
   
 .card__face {

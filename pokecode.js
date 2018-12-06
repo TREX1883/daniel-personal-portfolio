@@ -1,7 +1,7 @@
 import { pokemon } from './assets/pokemon.js'
 // console.log('TEST')
 
-console.log(pokemon)
+// console.log(pokemon)
 
 // Card container
 const pokeContainer = document.querySelector('#container')
@@ -17,7 +17,7 @@ card.addEventListener( 'click', function() {
 
 // Front Card
 let frontCard = document.createElement('figure')
-frontCard.className = "card__face card__face--front"
+frontCard.className= "card__face card__face--front"
 console.log(`${poke.id}${poke.ename}.png`)
 let cap = document.createElement('figcaption')
 let img = document.createElement('img')
