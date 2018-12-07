@@ -15,3 +15,29 @@ console.log(`There are ${republicans.length} republicans and ${democrats.length}
 console.log(`There are ${males.length} men and ${females.length} woman in the Senate.`)
 console.log(`The most Loyal republican is ${loyalRepublican.first_name} ${loyalRepublican.last_name} from ${loyalRepublican.state} who votes with republicans ${loyalRepublican.votes_with_party_pct}% of the time.`)
 console.log(`The most Loyal democrat is ${loyalDemocrats.first_name} ${loyalDemocrats.last_name} from ${loyalDemocrats.state} who votes with democrats ${loyalDemocrats.votes_with_party_pct}% of the time.`)
+
+const senWithPics = senators.map(senator => {
+    senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
+    if(senator.govtrack_id === '412743'){
+        // senator.imgURL = `http://localhost;550/assets/cindy.jpeg`
+        senator.imgURL = `https://bloximages.newyork1.vip.townnews.com/djournal.com/content/tncms/assets/v3/editorial/d/f6/df6a5b09-1d8d-58ec-9bef-2c6d5877fbca/5b553847030fe.image.jpg`
+    }
+    if(senator.govtrack_id === '107311'){
+        senator.imgURL = `https://pbs.twimg.com/profile_images/988848877515100160/0echd7Yh_400x400.jpg`
+    }
+    return senator
+})
+
+console.log(senWithPics)
+let picDiv = document.querySelector('.container')
+
+senWithPics.forEach(senator => {
+    let senatorPic = document.createElement('img')
+    let senatorFig = document.createElement('figure')
+    let senatorCap = document.createElement('figcaption')
+    senatorCap.textContent = `${senator.first_name} ${senator.last_name}`
+    senatorPic.src = senator.imgURL
+    senatorFig.appendChild(senatorPic)
+    senatorFig.appendChild(senatorCap)
+    picDiv.appendChild(senatorFig)
+})
