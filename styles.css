@@ -85,7 +85,6 @@ h1 {
   text-decoration: none;
   color: black;
   display: inline-block;
-  /* justify-content: space-evenly; */
   overflow: hidden;
   border: 2px solid black;
   height: 250px;
