@@ -2,6 +2,8 @@ import { senatorData } from './assets/senators.js'
 
 // ------------------------SENATORS PAGE---------------------------------
 
+// const temp = document.querySelector('#topcontainer')
+
 const senators = senatorData.results[0].members
 const republicans = senators.filter(senator => senator.party === 'R')
 const democrats = senators.filter(senator => senator.party === 'D')
@@ -10,6 +12,24 @@ const females = senators.filter(senator => senator.gender === 'F')
 const males = senators.filter(senator => senator.gender === 'M')
 const loyalRepublican = republicans.reduce((acc, senator) => (senator.votes_with_party_pct > 0) ? senator : acc, 0) 
 const loyalDemocrats = democrats.reduce((acc, senator) => (senator.votes_with_party_pct > 0) ? senator : acc, 0)
+
+
+
+// let femaleSenator = document.querySelector('#female')
+// let info = document.createElement('p')
+// info.textContent = `There are ${females.length} female senators`
+
+// let maleSenator = document.querySelector('#male')
+// let infor = document.createElement('p')
+// infor.textContent = `There are ${males.length} male senators`
+
+// femaleSenator.appendChild(info)
+// maleSenator.appendChild(infor)
+
+// repsdems.textContent = `There are ${republicans.length} republicans and ${democrats.length} democrats in the Senate.`
+// let repsdems = document.createElement('p')
+// temp.appendChild(repsdems)
+
 
 console.log(`There are ${republicans.length} republicans and ${democrats.length} democrats in the Senate.`)
 console.log(`There are ${males.length} men and ${females.length} woman in the Senate.`)
@@ -28,7 +48,7 @@ const senWithPics = senators.map(senator => {
     return senator
 })
 
-console.log(senWithPics)
+// console.log(senWithPics)
 let picDiv = document.querySelector('.container')
 
 senWithPics.forEach(senator => {
@@ -41,3 +61,4 @@ senWithPics.forEach(senator => {
     senatorFig.appendChild(senatorCap)
     picDiv.appendChild(senatorFig)
 })
+
