@@ -2,10 +2,7 @@ import { films } from './assets/films.js'
 import { people } from './assets/people.js'
 import { starships } from './assets/starships.js'
 
-
-
-// let filmsList2 = films;
-// console.log(filmsList2)
+/* <---------------------------STARWARS FILMS API-----------------------------> */
 let filmList = document.querySelector("#film-list")
 
 films.forEach((film) => {
@@ -16,9 +13,8 @@ films.forEach((film) => {
     console.log(film.title)
 })
 
-
+/* <---------------------------STARWARS PEOPLE API-----------------------------> */
 let peopleList = document.querySelector("#people-list")
-
 // This enables to limit how many lists with 10 max 
 let limitedPeople = people.slice(0, 10)
 
@@ -29,10 +25,8 @@ limitedPeople.forEach((people) => {
     console.log(people.name)
 })
 
-
-
+/* <---------------------------STARWARS SHIPS API-----------------------------> */
 let starshipsList = document.querySelector("#starships-list")
-
 // This enables to limit how many lists with 10 max 
 let limitedStarships = starships.slice(0, 10)
 

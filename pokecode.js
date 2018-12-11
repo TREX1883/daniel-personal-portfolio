@@ -1,21 +1,21 @@
 import { pokemon } from './assets/pokemon.js'
-// console.log('TEST')
 
+// console.log('TEST')
 // console.log(pokemon)
 
-// Card container
+/* <---------------------------CARD CONTAINER-----------------------------> */
+
 const pokeContainer = document.querySelector('#container')
 
 const cardCreator = (poke) =>{
-
 let card = document.createElement('div')
 card.className = "card"
 card.addEventListener( 'click', function() {
      card.classList.toggle('is-flipped');
 })
 
+/* <---------------------------FRONT CARD-----------------------------> */
 
-// Front Card
 let frontCard = document.createElement('figure')
 frontCard.className= "card__face card__face--front"
 console.log(`${poke.id}${poke.ename}.png`)
@@ -26,14 +26,14 @@ cap.textContent = poke.ename
 frontCard.appendChild(cap)
 frontCard.appendChild(img)
 
+/* <---------------------------BACK CARD-----------------------------> */
 
-// Back Card
 let backCard = document.createElement('figure')
 backCard.className = "card__face card__face--back"
-let capt = document.createElement('figcaption')
-let imag = document.createElement('img')
-imag.src = "img2/pokemonLogo2.png"
-capt.textContent = poke.ename
+let caption = document.createElement('figcaption')
+let image = document.createElement('img')
+image.src = "img2/pokemonLogo2.png"
+caption.textContent = poke.ename
 let attack = document.createElement('p')
 let defense = document.createElement('p')
 let speed = document.createElement('p')
@@ -44,8 +44,8 @@ defense.textContent = `Defense: ${poke.base.Defense}`
 speed.textContent = `Speed: ${poke.base.Speed}`
 hp.textContent = `Hit Points: ${poke.base.HP}`
 
-backCard.appendChild(imag)
-backCard.appendChild(capt)
+backCard.appendChild(image)
+backCard.appendChild(caption)
 backCard.appendChild(attack)
 backCard.appendChild(defense)
 backCard.appendChild(speed)
@@ -55,7 +55,8 @@ card.appendChild(backCard)
 pokeContainer.appendChild(card)
 }
 
-// Create new Card
+/* <---------------------------CREATE CARD-----------------------------> */
+
 pokemon.forEach(element => cardCreator(element))
 
 function Pokemon(ename, id, base) {
@@ -65,88 +66,7 @@ function Pokemon(ename, id, base) {
 }
 
 let newPokemon = new Pokemon("Exeggcute", 102, {"Attack": 190, "Defense": 35, "HP": 30, "Speed": 200})
-
 let create = document.querySelector('#create')
 create.addEventListener('click', () => {
 return cardCreator(newPokemon)
 })
-
-// let newCard = {
-//    "ename": "Exeggcute", 
-//     "id": "102", 
-//     "base": {
-//     "Attack": 190, 
-//     "Defense": 35, 
-//     "HP": 30,  
-//     "Speed": 200
-// }
-// }
-
-// class Pokemon {
-//      constructor(id, ename, base) {
-//           this.id = id
-//           this.ename = ename
-//           this.base = base
-//      }
-// }
-
-// let newPokemon = new Pokemon(150, 'Newtwo', {'Attack': 190, 'Defense': 35, 'HP': 30})
-
-
-
-
-
-// let att = Math.floor(Math.random() * Math.floor(max));
-// attack = Math.random();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let createCard = document.createElement('div')
-// createCard.className = "card"
-// createCard.addEventListener('click', () => {
-//   console.log("thanks for clicking!")
-// })
-
-
-// ---------------------------------------------------
-
-// console.log(pokemon)
-
-// const pokeContainer = document.querySelector('#container')
-
-// pokemon.forEach(poke => {
-//     console.log(`${poke.id}${poke.ename}`)
-//     // let card = document.createElement('div')
-//     let fig = document.createElement('figure')
-//     let img = document.createElement('img')
-//     let cap = document.createElement('figcaption')
-//     // let backDiv = document.createElement('div')
-//     // backDiv.textContent = poke.cname
-//     // cap.textContent = poke.ename
-//     img.src = `img/${poke.id}${poke.ename}.png`
-//     fig.appendChild(img)
-//     fig.appendChild(cap)
-//     // card.appendChild(fig)
-//     // card.appendChild(backDiv)
-//     pokeContainer.appendChild(fig)
-//     // card.addEventListener( 'click', function() {
-//     //     console.log(poke.ename)
-//     //     // console.log(`${poke.id}${poke.ename}`)
-//     //     card.classList.toggle('is-flipped');
-//     // });
-// })
-
